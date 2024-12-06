@@ -7,7 +7,7 @@ const commentRoute = require("./routes/commentRoute.js")
 const likePost = require("./routes/likeRoute.js")
  
 const app = express()
-const port = 8080
+const port = process.env.port || 8080
 app.use(express.json())
 app.use(cors())
  
